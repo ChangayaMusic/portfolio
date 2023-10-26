@@ -1,0 +1,66 @@
+/* Réinitialisation des styles par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de l'en-tête */
+header {
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Style de la navigation */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Style des sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 35px;
+    
+}
+
+/* Style des liens */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style du pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style de la liste non ordonnée */
+ul {
+    list-style: none;
+}
+
+/* Style des éléments de la liste de navigation */
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Ajoutez ici d'autres styles personnalisés selon vos préférences */
+

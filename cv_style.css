@@ -1,0 +1,191 @@
+/* Style de la section d'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Style des sections de contenu */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 4px solid #333;
+    margin: 20px;
+    
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 40px 90px; /* Ajout de marges en haut et en bas des listes */
+}
+
+li::before {
+    content: "\2022";
+    color: #007BFF;
+    font-size: 12px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+/* Style du pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style des logos d'entreprise */
+.company-logo {
+    float: center; /* Aligner les logos à gauche du texte */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+    max-height: 75px;
+    max-width: 75px; /* Ajustez la largeur du logo en fonction de vos besoins */
+    background: transparent;
+    margin-top: 20px;
+}
+
+/* Style des titres de l'expérience professionnelle (h3) */
+.experience h3 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold; /* Gras */
+    margin: 20px;
+}
+
+/* Marge supplémentaire pour les titres (h3) */
+.experience h3 {
+    margin-top: 0; /* Réduire l'espacement en haut du titre h3 */
+    margin-bottom: 10px; /* Ajouter de l'espacement en bas du titre h3 */
+    font-size: 28px;
+}
+section h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #888888, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+section h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000; /* Ajout d'une bordure noire */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+section h2:hover {
+    background: linear-gradient(45deg, #000000, #888888); /* Dégradé modifié au survol (de noir à gris) */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+    border-radius: 10px; /* Coins arrondis */
+    transform: scale(1.04);
+    
+}
+
+section h2:hover::before {
+    border: 2px solid #000000; /* Contour ajouté au survol (en noir) */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Ombre texturée maintenue (de gris à noir) */
+    transition: all 0.3s;
+    border-radius: 10px; /* Coins arrondis */
+}
+.experience-content {
+    border: 1px solid #333;
+    margin-inline: 200px; /* Ajustez la valeur selon vos besoins */
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: #f2f2f2; /* Fond gris clair */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transitions en douceur pour la couleur de fond, l'effet de zoom et l'ombre */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    
+}
+
+
+.experience-content:hover {
+    background-color: #fff; /* Fond blanc au survol */
+    transform: scale(1.1); /* Ajustez la valeur (1.1) pour définir l'intensité du zoom */
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+}
+
+
+ul li  {
+    font-size: 20px;
+    
+    
+}
+
+
+
+.experience-content p {
+    font-size: 22px; 
+    font-weight: bold; /* Met en gras le texte */
+    
+}
+.col-md-2:hover {
+    transform: scale(1.1); /* Ajustez la valeur (1.1) pour définir l'intensité du zoom */
+    transition: transform 0.3s; /* Ajoute une transition douce pour l'effet de zoom */
+}
+.col-md-2 {
+    border: #f2f2f2;
+    background-color: white ;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.home-button {
+    width: 40px; /* Largeur de l'image */
+    height: 40px; /* Hauteur de l'image */
+    background-image: url('media/images/home.png'); /* Chemin de l'image */
+    margin: 20px 0 10px 20px; /* Marge à ajuster selon vos besoins (margin-top réduite à 10px) */
+    background-size: contain; /* Ajuste la taille de l'image pour tenir dans le bouton */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans le bouton */
+    display: inline-block; /* Permet au bouton de prendre la taille de son contenu */
+    border: 2px;
+    float: left; /* Place l'élément à gauche */
+}
+
+
+.home-button:hover {
+    
+    background-color: gray; /* Couleur de fond légèrement plus sombre au survol */
+    border: #fff;
+    border-radius: 20px;
+    transform: scale(1.2); /* Ajustez la valeur (1.1) pour définir l'intensité du zoom */
+    transition: transform 0.3s; /* Ajoute une transition douce pour l'effet de zoom */
+
+
+}
